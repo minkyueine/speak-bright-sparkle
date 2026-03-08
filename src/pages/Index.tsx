@@ -11,7 +11,7 @@ import FAQSection from "@/components/smartstore/FAQSection";
 
 const Index = () => {
   return (
-    <div className="max-w-[860px] mx-auto bg-card shadow-dark overflow-hidden">
+    <div className="max-w-[480px] mx-auto bg-card shadow-dark overflow-hidden">
       <HeroSection />
       <AuthoritySection />
       <PainPointSection />
