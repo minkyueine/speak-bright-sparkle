@@ -9,9 +9,9 @@ const courses = [
     bgAccent: "bg-blue-50",
     dotColor: "bg-blue-500",
     items: [
-      { title: "파닉스 마스터 (Phonics)", desc: "알파벳 음가부터 정확한 발음 기호까지, 영어를 처음 접하는 아이를 위한 필수 기초 코스", level: "Level 1-2" },
-      { title: "미국 교과서 읽기 (Let's Go)", desc: "세계적인 베스트셀러 교재를 활용하여 일상 회화 패턴과 기초 문법을 자연스럽게 습득", level: "Level 3-5" },
-      { title: "라즈키즈 원서 토론 (Raz-kids)", desc: "수천 권의 원서를 읽고 강사님과 독후 활동을 진행하며 독해력과 논리적인 말하기 동시 훈련", level: "전 레벨 맞춤" },
+      { title: "파닉스 마스터 (Phonics)", desc: "알파벳 음가 → 정확한 발음 기호까지\n영어를 처음 접하는 아이 필수 기초 코스", level: "Level 1-2" },
+      { title: "미국 교과서 읽기 (Let's Go)", desc: "세계적 베스트셀러 교재 활용\n일상 회화 패턴 + 기초 문법 자연 습득", level: "Level 3-5" },
+      { title: "라즈키즈 원서 토론 (Raz-kids)", desc: "수천 권 원서를 읽고 강사님과 독후 활동\n독해력 + 논리적 말하기 동시 훈련", level: "전 레벨 맞춤" },
     ],
   },
   {
@@ -23,9 +23,9 @@ const courses = [
     dotColor: "bg-primary",
     best: true,
     items: [
-      { title: "왕초보 입트이기 (Pattern)", desc: "문법 강박증 탈출! 원어민이 가장 많이 쓰는 100가지 핵심 패턴을 반복 훈련하여 즉각 발화", level: "Level 1-3" },
-      { title: "상황별 여행/생존 회화", desc: "공항, 호텔, 식당, 카페 등 해외 현지에서 발생할 수 있는 모든 상황을 롤플레잉하며 실전 대비", level: "Level 3-5" },
-      { title: "프리토킹 입문 (Daily Talk)", desc: "정해진 대본 없이, 날씨, 취미, 일상 등의 가벼운 주제로 자유롭게 대화하며 자신감 200% 충전", level: "Level 4-6" },
+      { title: "왕초보 입트이기 (Pattern)", desc: "문법 강박증 탈출!\n원어민이 가장 많이 쓰는 100가지 핵심 패턴 반복 훈련", level: "Level 1-3" },
+      { title: "상황별 여행/생존 회화", desc: "공항·호텔·식당·카페 등\n해외 현지 모든 상황을 롤플레잉으로 실전 대비", level: "Level 3-5" },
+      { title: "프리토킹 입문 (Daily Talk)", desc: "대본 없이 가벼운 주제로 자유 대화\n자신감 200% 충전!", level: "Level 4-6" },
     ],
   },
   {
@@ -36,9 +36,9 @@ const courses = [
     bgAccent: "bg-gray-50",
     dotColor: "bg-gray-700",
     items: [
-      { title: "비즈니스 실무 (Business)", desc: "영문 이메일 작성법, 바이어 미팅, 화상 회의, 프레젠테이션 등 세련된 고급 비즈니스 어휘 마스터", level: "Level 6-8" },
-      { title: "영자 신문 & 뉴스 토론", desc: "매주 업데이트되는 글로벌 시사, 경제 이슈 기사를 읽고 원어민 강사와 깊이 있는 찬반 토론 진행", level: "Level 7-10" },
-      { title: "공인 스피킹/면접 대비", desc: "OPIc, TOEIC Speaking 및 외국계 기업 영어 면접 기출 문제를 바탕으로 한 실전 모의고사 훈련", level: "Level 6-9" },
+      { title: "비즈니스 실무 (Business)", desc: "영문 이메일·바이어 미팅·화상 회의·PT\n고급 비즈니스 어휘 마스터", level: "Level 6-8" },
+      { title: "영자 신문 & 뉴스 토론", desc: "매주 업데이트되는 글로벌 시사·경제 기사\n원어민 강사와 깊이 있는 찬반 토론", level: "Level 7-10" },
+      { title: "공인 스피킹/면접 대비", desc: "OPIc · TOEIC Speaking · 외국계 면접\n기출 기반 실전 모의고사 훈련", level: "Level 6-9" },
     ],
   },
 ];
@@ -55,13 +55,11 @@ const CurriculumSection = () => {
           <br />
           <span className="text-gradient-hero text-lg">업계 최고 수준의 방대한 커리큘럼</span>
         </h2>
-        <p className="text-muted-foreground text-sm leading-relaxed mt-2">
-          알파벳조차 모르는 왕초보부터<br />고급 비즈니스 프레젠테이션까지.
-          <br /><br />
-          단순히 '프리토킹'만 하다가 끝나는 수업이 아닙니다.
-          <br />당신의 목표가 무엇이든 아인잉글리쉬에는<br />
-          <strong className="text-foreground">15개 이상의 완벽한 코스 로드맵</strong>이 준비되어 있습니다. 🎯
-        </p>
+        <div className="text-muted-foreground text-sm leading-relaxed mt-2 space-y-1">
+          <p>왕초보부터 고급 비즈니스 PT까지</p>
+          <p>단순 '프리토킹'만 하다 끝나는 수업 ❌</p>
+          <p className="text-foreground font-bold">15개 이상의 완벽한 코스 로드맵 🎯</p>
+        </div>
       </div>
 
       {/* Level Roadmap */}
@@ -75,9 +73,9 @@ const CurriculumSection = () => {
         <div className="absolute top-1/2 left-8 w-1/3 h-1.5 bg-gradient-hero -translate-y-1/2 rounded-full z-0" />
         {[
           { label: "L 1-3", sub: "입문/왕초보", active: true },
-          { label: "L 4-6", sub: "초중급/의사표현", active: true },
-          { label: "L 7-8", sub: "중고급/심화토론", active: false },
-          { label: "L 9-10", sub: "최상위/네이티브", active: false },
+          { label: "L 4-6", sub: "초중급", active: true },
+          { label: "L 7-8", sub: "중고급", active: false },
+          { label: "L 9-10", sub: "네이티브", active: false },
         ].map((level) => (
           <div key={level.label} className="relative z-10 flex flex-col items-center">
             <div
@@ -122,7 +120,7 @@ const CurriculumSection = () => {
                   <li key={j} className="relative pl-5 border-l-2 border-border last:border-l-transparent">
                     <span className={`absolute -left-[7px] top-0.5 w-3 h-3 ${course.dotColor} rounded-full border-[3px] border-card`} />
                     <h4 className="font-bold text-foreground text-sm mb-1">{item.title}</h4>
-                    <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed whitespace-pre-line">{item.desc}</p>
                     <span className={`inline-block mt-1.5 text-[10px] font-bold ${course.accentColor} ${course.bgAccent} px-2 py-0.5 rounded`}>
                       {item.level}
                     </span>
@@ -142,8 +140,8 @@ const CurriculumSection = () => {
         className="mt-8 bg-card rounded-2xl p-4 border border-border shadow-card"
       >
         <p className="text-muted-foreground text-xs leading-relaxed text-center">
-          💡 위 모든 교재와 커리큘럼은 <strong className="text-foreground">추가 결제 없이 전면 무료</strong>로 제공되며,
-          수강 중 언제든지 매니저를 통해 코스를 자유롭게 변경하실 수 있습니다.
+          💡 모든 교재와 커리큘럼 <strong className="text-foreground">추가 결제 없이 전면 무료!</strong>
+          <br />수강 중 언제든 코스 자유 변경 가능
         </p>
       </motion.div>
 
@@ -156,7 +154,7 @@ const CurriculumSection = () => {
       >
         <div className="text-center mb-4">
           <span className="inline-block bg-primary/10 text-primary font-bold text-xs px-3 py-1 rounded-full mb-2">
-            🤝 독점 제휴 · 타사 월 3만 원 상당 전면 무료
+            🤝 독점 제휴 · 타사 월 3만원 상당 → 전면 무료
           </span>
           <h3 className="text-lg font-black text-foreground mb-1">
             전 세계 800만의 선택
@@ -165,10 +163,20 @@ const CurriculumSection = () => {
             라즈키즈(Raz-kids) 연동 📚
           </p>
         </div>
-        <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-          미국/캐나다 공립학교 정식 채택 도서관! 약 3천 권 이상의 방대한 영어 원서를 마음껏 읽고 듣습니다.
-          아인 강사님과의 독후 토론 활동으로 원서의 흡수율을 200% 끌어올리세요.
-        </p>
+        <div className="space-y-1.5 mb-4">
+          <div className="flex items-start gap-2 text-sm">
+            <span className="text-primary flex-shrink-0">▸</span>
+            <span className="text-muted-foreground">미국/캐나다 공립학교 <strong className="text-foreground">정식 채택</strong> 도서관</span>
+          </div>
+          <div className="flex items-start gap-2 text-sm">
+            <span className="text-primary flex-shrink-0">▸</span>
+            <span className="text-muted-foreground"><strong className="text-foreground">약 3천 권 이상</strong>의 영어 원서 마음껏 읽고 듣기</span>
+          </div>
+          <div className="flex items-start gap-2 text-sm">
+            <span className="text-primary flex-shrink-0">▸</span>
+            <span className="text-muted-foreground">아인 강사님과 독후 토론 → 흡수율 <strong className="text-foreground">200% UP</strong></span>
+          </div>
+        </div>
         <div className="grid grid-cols-2 gap-3">
           <div className="bg-card rounded-xl p-3 text-center border border-border">
             <span className="text-xl mb-1 block">📚</span>
@@ -178,7 +186,7 @@ const CurriculumSection = () => {
           <div className="bg-card rounded-xl p-3 text-center border border-border">
             <span className="text-xl mb-1 block">📈</span>
             <div className="text-foreground font-black text-base">29개 레벨</div>
-            <div className="text-muted-foreground text-[10px]">유아부터 성인까지 완벽 호환</div>
+            <div className="text-muted-foreground text-[10px]">유아~성인 완벽 호환</div>
           </div>
         </div>
       </motion.div>
@@ -192,7 +200,7 @@ const CurriculumSection = () => {
       >
         <div className="inline-flex items-center gap-1.5 bg-primary/10 text-primary px-3 py-1.5 rounded-full mb-3 shadow-sm">
           <span className="text-base">🎁</span>
-          <span className="font-bold text-xs">레벨업/코스 변경 시 추가 결제 절대 NO!</span>
+          <span className="font-bold text-xs">레벨업/코스 변경 시 추가 결제 ❌</span>
         </div>
         <h3 className="text-xl font-black text-foreground mb-2">
           이 모든 프리미엄 콘텐츠가
@@ -200,14 +208,12 @@ const CurriculumSection = () => {
         <p className="text-primary font-black text-2xl mb-3">
           추가 결제 없이 0원! 🎉
         </p>
-        <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-          수백 권의 프리미엄 전 과목 교재를<br />무제한으로 열람하세요!
-        </p>
-        <p className="text-muted-foreground text-xs leading-relaxed">
-          시중의 뻔한 교재가 아닙니다. 아인의 교육 연구소에서 매달 업데이트하는 최신 트렌드 자체 교재!
-          내 실력과 목적에 맞게 마음껏 활용하세요. ✨
-        </p>
-        <div className="mt-4 pt-4 border-t border-border">
+        <div className="space-y-1 text-sm text-muted-foreground mb-4">
+          <p>수백 권의 프리미엄 전 과목 교재 <strong className="text-foreground">무제한 열람</strong></p>
+          <p>아인 교육 연구소에서 <strong className="text-foreground">매달 업데이트</strong>하는 최신 자체 교재</p>
+          <p>내 실력과 목적에 맞게 마음껏 활용 ✨</p>
+        </div>
+        <div className="pt-4 border-t border-border">
           <p className="text-xs text-muted-foreground">
             교재비 명목으로 결제를 유도하는 타사와<br /><strong className="text-foreground">확실하게 비교해 보세요.</strong>
           </p>

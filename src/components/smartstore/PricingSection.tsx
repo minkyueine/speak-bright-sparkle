@@ -39,8 +39,8 @@ const PricingSection = () => {
         <h2 className="text-xl font-black text-foreground mb-2">
           💰 업계 최저가 수준의<br />정직한 수강료
         </h2>
-        <p className="text-muted-foreground text-sm leading-relaxed">
-          마케팅 거품을 빼고<br />오직 강사진과 수업 퀄리티에 투자했습니다. 💎
+        <p className="text-muted-foreground text-sm">
+          마케팅 거품 ❌ → 강사진과 수업 퀄리티에 올인! 💎
         </p>
       </div>
 
@@ -71,7 +71,7 @@ const PricingSection = () => {
               <p className={`text-xs mb-4 pb-4 border-b ${plan.best ? "text-primary font-bold border-primary/20" : "text-muted-foreground border-border"}`}>
                 {plan.desc}
               </p>
-              <ul className="space-y-2.5 mb-5 text-sm text-foreground/80">
+              <ul className="space-y-2 mb-5 text-sm text-foreground/80">
                 {plan.features.map((f, j) => (
                   <li key={j} className="flex items-center gap-2">
                     <span className="text-primary">✔</span> {f}
@@ -96,10 +96,11 @@ const PricingSection = () => {
         className="mt-8 text-center"
       >
         <div className="bg-muted rounded-2xl p-5 border border-border">
-          <p className="text-sm text-muted-foreground leading-relaxed">
+          <p className="text-sm text-muted-foreground">
             ☕ <strong className="text-foreground">커피 한 잔 값</strong>으로 원어민 1:1 수업!
-            <br />
-            <span className="text-xs">주 5회 기준 <strong className="text-primary">1회당 약 6,000원</strong></span>
+          </p>
+          <p className="text-xs text-muted-foreground mt-1">
+            주 5회 기준 <strong className="text-primary text-base font-black">1회당 약 6,000원</strong>
           </p>
         </div>
       </motion.div>
