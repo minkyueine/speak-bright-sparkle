@@ -1,12 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/smartstore/HeroSection";
+import AuthoritySection from "@/components/smartstore/AuthoritySection";
+import PainPointSection from "@/components/smartstore/PainPointSection";
+import ComparisonSection from "@/components/smartstore/ComparisonSection";
+import USPSection from "@/components/smartstore/USPSection";
+import CurriculumSection from "@/components/smartstore/CurriculumSection";
+import ReviewSection from "@/components/smartstore/ReviewSection";
+import ProcessSection from "@/components/smartstore/ProcessSection";
+import PricingSection from "@/components/smartstore/PricingSection";
+import FAQSection from "@/components/smartstore/FAQSection";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="max-w-[860px] mx-auto bg-card shadow-dark overflow-hidden">
+      <HeroSection />
+      <AuthoritySection />
+      <PainPointSection />
+      <ComparisonSection />
+      <USPSection />
+      <CurriculumSection />
+      <ReviewSection />
+      <ProcessSection />
+      <PricingSection />
+      <FAQSection />
     </div>
   );
 };
