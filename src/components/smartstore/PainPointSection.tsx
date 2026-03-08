@@ -8,34 +8,44 @@ const painPoints = [
     case: "CASE 01",
     caseLabel: "우리 아이 😢",
     title: '"매일 학원에 가는데,\n외국인 앞에선 꿀 먹은 벙어리예요."',
-    quote: '"파닉스도 다 뗐고, 단어 시험도 맨날 백 점이라는데... 정작 영어로 말을 걸면 입을 꾹 닫아버려요."',
-    desc: "언어가 아닌 '과목'으로 영어를 암기하고 있기 때문입니다. 틀리면 혼나는 주입식 환경에서는 아이가 절대 자신 있게 입을 열 수 없습니다. 살아있는 대화 경험이 절대적으로 부족한 상태입니다.",
+    quote: '"파닉스도 다 뗐고, 단어 시험도 맨날 백 점인데...\n정작 영어로 말을 걸면 입을 꾹 닫아버려요."',
+    points: [
+      { bold: "원인:", text: "영어를 '과목'으로만 암기하고 있기 때문" },
+      { bold: "문제:", text: "틀리면 혼나는 주입식 환경 → 절대 자신 있게 입을 열 수 없음" },
+      { bold: "핵심:", text: "살아있는 대화 경험이 절대적으로 부족한 상태" },
+    ],
     img: childImg,
     color: "border-brand-gold",
     badgeColor: "bg-brand-gold text-foreground",
-    quoteColor: "border-l-brand-gold",
   },
   {
     case: "CASE 02",
     caseLabel: "어른/직장인 😰",
     title: '"머릿속으로 영작하느라,\n대화 타이밍을 다 놓쳐버립니다."',
-    quote: '"아, 이 문장이 과거완료인가? 전치사는 on인가? 완벽한 문장을 만들려다 보니 결국 \'Yes, Yes\'만 하다가 끝나요."',
-    desc: "상대방의 말을 한국어로 해석 ➔ 내 할 말을 한국어로 생각 ➔ 다시 영어로 번역. 이 복잡한 필터를 거치는 동안 대화는 이미 지나가 버립니다. 문법 강박증이 말문을 막고 있습니다.",
+    quote: '"완벽한 문장을 만들려다 보니\n결국 \'Yes, Yes\'만 하다가 끝나요."',
+    points: [
+      { bold: "듣기:", text: "상대방의 말을 한국어로 해석" },
+      { bold: "생각:", text: "내 할 말을 한국어로 구성" },
+      { bold: "말하기:", text: "다시 영어로 번역 → 대화는 이미 끝" },
+      { bold: "결론:", text: "문법 강박증이 말문을 막고 있습니다" },
+    ],
     img: painAdultImg,
     color: "border-primary",
     badgeColor: "bg-primary text-primary-foreground",
-    quoteColor: "border-l-primary",
   },
   {
     case: "CASE 03",
     caseLabel: "공통의 문제 😵",
-    title: '"외국인만 다가오면\n머릿속이 하얗게 백지장으로 변해요."',
-    quote: '"How are you? 같이 아는 말인데도 막상 눈을 마주치면 심장이 뛰고 당황해서 시선을 피하게 됩니다."',
-    desc: "지극히 당연한 현상입니다. 수능과 토익 점수는 높을지 몰라도, 막상 눈을 마주치고 소리 내어 말해본 '실전 경험'이 평생을 통틀어 몇 시간도 되지 않기 때문입니다.",
+    title: '"외국인만 다가오면\n머릿속이 하얗게 백지장이 됩니다."',
+    quote: '"How are you? 같이 아는 말인데도\n눈 마주치면 심장이 뛰고 시선을 피하게 돼요."',
+    points: [
+      { bold: "현실:", text: "수능·토익 점수는 높아도" },
+      { bold: "문제:", text: "소리 내어 말해본 '실전 경험'이 평생 몇 시간도 안 됨" },
+      { bold: "결론:", text: "지극히 당연한 현상입니다" },
+    ],
     img: teacherImg,
     color: "border-brand-red",
     badgeColor: "bg-brand-red text-primary-foreground",
-    quoteColor: "border-l-brand-red",
   },
 ];
 
@@ -60,10 +70,10 @@ const PainPointSection = () => {
           시간과 돈을 수없이 투자했는데,
           <br />
           <span className="text-gradient-gold inline-block border-b-4 border-primary pb-1 text-lg mt-1">
-            우리의 영어는 왜 항상 제자리일까요? 🤔
+            영어는 왜 항상 제자리일까요? 🤔
           </span>
         </motion.h2>
-        <p className="text-secondary-foreground/60 text-sm font-light leading-relaxed">
+        <p className="text-secondary-foreground/60 text-sm font-light">
           나, 그리고 우리 아이의 이야기인지<br />확인해 보세요.
         </p>
       </div>
@@ -78,7 +88,7 @@ const PainPointSection = () => {
             transition={{ duration: 0.5 }}
             className={`bg-card rounded-3xl shadow-xl overflow-hidden border-l-[6px] ${p.color}`}
           >
-            <div className="relative h-48">
+            <div className="relative h-44">
               <img src={p.img} alt="" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent flex items-end p-4">
                 <span className={`${p.badgeColor} font-black px-3 py-1 rounded-lg text-xs`}>
@@ -90,13 +100,19 @@ const PainPointSection = () => {
               <h3 className="text-lg font-black text-foreground mb-3 leading-snug whitespace-pre-line">
                 {p.title}
               </h3>
-              <div className={`bg-muted p-4 rounded-xl mb-4 border-l-4 ${p.quoteColor}`}>
-                <p className="text-foreground/70 italic font-medium text-sm leading-relaxed">{p.quote}</p>
+              <div className="bg-muted p-3.5 rounded-xl mb-4 border-l-4 border-muted-foreground/30">
+                <p className="text-foreground/70 italic font-medium text-sm leading-relaxed whitespace-pre-line">{p.quote}</p>
               </div>
-              <p className="text-muted-foreground leading-relaxed text-sm">
-                <strong className="text-foreground">{p.desc.split(".")[0]}.</strong>{" "}
-                {p.desc.split(".").slice(1).join(". ")}
-              </p>
+              <div className="space-y-2">
+                {p.points.map((pt, j) => (
+                  <div key={j} className="flex items-start gap-2 text-sm">
+                    <span className="text-primary mt-0.5 flex-shrink-0">▸</span>
+                    <p className="text-muted-foreground leading-relaxed">
+                      <strong className="text-foreground">{pt.bold}</strong> {pt.text}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </motion.div>
         ))}
