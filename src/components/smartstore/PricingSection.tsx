@@ -12,7 +12,7 @@ const plans = [
   {
     title: "주 3회",
     sub: "월 12회",
-    desc: "가장 빠르게 느는 최적 횟수 🚀",
+    desc: "실력이 가장 빠르게 느는 최적의 횟수 🚀",
     price: "80,000",
     best: true,
     features: [
@@ -25,7 +25,7 @@ const plans = [
   {
     title: "주 5회",
     sub: "월 20회",
-    desc: "단기간 완벽한 영어 몰입 🔥",
+    desc: "단기간 완벽한 영어 몰입 환경 🔥",
     price: "120,000",
     best: false,
     features: ["1:1 원어민 맞춤 수업", "실시간 교정 피드백", "모든 교재 무상 제공"],
@@ -36,11 +36,11 @@ const PricingSection = () => {
   return (
     <section className="bg-card py-14 px-5 border-t border-border">
       <div className="text-center mb-10">
-        <h2 className="text-2xl font-black text-foreground mb-2">
-          💰 업계 최저가 정직한 수강료
+        <h2 className="text-xl font-black text-foreground mb-2">
+          💰 업계 최저가 수준의<br />정직한 수강료
         </h2>
-        <p className="text-muted-foreground text-sm">
-          마케팅 거품 빼고 강사진·수업 퀄리티에 투자! 💎
+        <p className="text-muted-foreground text-sm leading-relaxed">
+          마케팅 거품을 빼고<br />오직 강사진과 수업 퀄리티에 투자했습니다. 💎
         </p>
       </div>
 
@@ -95,8 +95,8 @@ const PricingSection = () => {
         viewport={{ once: true }}
         className="mt-8 text-center"
       >
-        <div className="bg-muted rounded-2xl p-4 border border-border">
-          <p className="text-sm text-muted-foreground">
+        <div className="bg-muted rounded-2xl p-5 border border-border">
+          <p className="text-sm text-muted-foreground leading-relaxed">
             ☕ <strong className="text-foreground">커피 한 잔 값</strong>으로 원어민 1:1 수업!
             <br />
             <span className="text-xs">주 5회 기준 <strong className="text-primary">1회당 약 6,000원</strong></span>

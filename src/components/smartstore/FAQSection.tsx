@@ -3,23 +3,23 @@ import { motion } from "framer-motion";
 const faqs = [
   {
     q: "선생님 배정이나 교재 선정은 어떻게 하나요?",
-    a: "매니저가 수강생 레벨과 선호 스타일에 맞춰 최적의 강사님과 교재를 1:1 매칭해 드립니다. 😊",
+    a: "첫 결제 후, 매니저가 직접 연락드려 수강생의 레벨과 선호하는 스타일에 맞춰 최적의 강사님과 교재를 1:1로 매칭해 드립니다. 처음이라 막막하셔도 모두 알아서 세팅해 드립니다. 😊",
   },
   {
-    q: "수업 휴강이나 연기가 가능한가요?",
-    a: "네! '나의 강의실'에서 간편하게 휴강·대체 수업 신청이 가능합니다. 📅",
+    q: "갑자기 일정이 생기면 수업 휴강이나 연기 신청이 가능한가요?",
+    a: "네, 가능합니다! 홈페이지 '나의 강의실'을 통해 수업 시작 일정 시간 전까지 간편하게 휴강 및 대체 수업을 신청하실 수 있습니다. 수강생의 스케줄을 최우선으로 존중합니다. 📅",
   },
   {
-    q: "정말 100% 환불/취소가 되나요?",
-    a: "네! 위약금·수수료 없이 100% 깔끔하게 취소 처리해 드립니다. 아인의 강의력에 대한 자신감입니다. 💪",
+    q: "정말 불만족하면 100% 환불/취소가 되나요?",
+    a: "네! 체험 수업 후 본인의 학습 스타일과 맞지 않는다고 판단되시면 위약금이나 수수료 없이 100% 깔끔하게 취소 처리해 드립니다. 아인의 강의력에 대한 굳은 자신감입니다. 💪",
   },
   {
     q: "필리핀 선생님 발음이 괜찮을까요?",
-    a: "경쟁률 100:1을 통과한 상위 1% 엘리트입니다. 실제 수업 영상도 100% 공개! 🎯",
+    a: "경쟁률 100:1을 통과한 상위 1% 엘리트입니다. 실제 수업 영상도 100% 공개하고 있으니 직접 확인해 보세요! 🎯",
   },
   {
     q: "아이와 성인 모두 가능한가요?",
-    a: "네! 5세부터 성인까지 파닉스~비즈니스 영어, IELTS까지 전 코스 준비되어 있습니다. 📚",
+    a: "네! 5세부터 성인까지 파닉스, 일상 회화, 비즈니스 영어, IELTS/TOEIC Speaking까지 전 코스가 준비되어 있습니다. 📚",
   },
 ];
 
@@ -27,9 +27,12 @@ const FAQSection = () => {
   return (
     <section className="bg-card py-14 px-5">
       <div className="mb-12">
-        <h3 className="text-xl font-black text-foreground mb-6 text-center">
-          ❓ 자주 묻는 질문 FAQ
+        <h3 className="text-xl font-black text-foreground mb-2 text-center">
+          ❓ 결제 전 자주 묻는 질문 FAQ
         </h3>
+        <p className="text-muted-foreground text-sm text-center mb-6">
+          궁금한 점은 여기서 먼저 확인해 보세요!
+        </p>
         <div className="space-y-3">
           {faqs.map((faq, i) => (
             <motion.div
@@ -41,8 +44,8 @@ const FAQSection = () => {
               className="bg-muted p-4 rounded-2xl"
             >
               <h4 className="font-bold text-sm text-foreground mb-2 flex items-start">
-                <span className="text-primary mr-2 text-lg leading-none font-black">Q</span>
-                {faq.q}
+                <span className="text-primary mr-2 text-lg leading-none font-black flex-shrink-0">Q</span>
+                <span>{faq.q}</span>
               </h4>
               <p className="text-muted-foreground ml-6 leading-relaxed text-sm">{faq.a}</p>
             </motion.div>
@@ -71,11 +74,12 @@ const FAQSection = () => {
           </h2>
           <p className="text-secondary-foreground/60 text-sm mb-8 leading-relaxed">
             다른 곳에서 비싼 돈 내고 후회하지 마세요.
-            <br />☕ 커피 한 모금도 안 되는 가격으로 1위의 품격을 증명합니다.
+            <br />☕ 커피 한 모금도 안 되는 가격으로,
+            <br />1위 화상영어의 품격을 증명하겠습니다.
           </p>
           <div className="bg-primary-foreground/10 backdrop-blur-md border border-primary-foreground/20 p-5 rounded-2xl animate-float shadow-2xl">
             <p className="text-brand-gold font-bold mb-3 text-sm">
-              👆 지금 바로 상단 구매 옵션 확인!
+              👆 지금 바로 상단 구매 옵션을 확인하세요!
             </p>
             <div className="flex items-center justify-center gap-3">
               <span className="text-2xl">☝️</span>
@@ -89,8 +93,8 @@ const FAQSection = () => {
       </motion.div>
 
       <div className="mt-6 text-center">
-        <p className="text-muted-foreground text-[10px]">
-          * 환불 규정 및 연기/취소 매뉴얼은 홈페이지 및 결제 완료 후 알림톡으로 제공됩니다.
+        <p className="text-muted-foreground text-[10px] leading-relaxed">
+          * 상세한 환불 규정 및 연기/취소 매뉴얼은<br />홈페이지 및 결제 완료 후 알림톡으로 투명하게 제공됩니다.
         </p>
       </div>
     </section>
