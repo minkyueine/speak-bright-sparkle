@@ -5,7 +5,7 @@ const plans = [
     title: "주 2회",
     sub: "월 8회",
     desc: "바쁜 일상 속 가벼운 시작 🌱",
-    price: "60,000",
+    price: "94,000",
     best: false,
     features: ["1:1 원어민 맞춤 수업", "실시간 교정 피드백", "모든 교재 무상 제공"],
   },
