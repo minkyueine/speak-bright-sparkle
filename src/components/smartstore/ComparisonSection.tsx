@@ -48,7 +48,7 @@ const ComparisonSection = () => {
         {rows.map((row, i) => (
           <div
             key={i}
-            className={`grid grid-cols-[1fr_1fr_1.2fr] ${i % 2 === 0 ? "bg-card" : "bg-muted"} border-t border-border`}
+            className={`grid grid-cols-[0.7fr_1fr_1.5fr] ${i % 2 === 0 ? "bg-card" : "bg-muted"} border-t border-border`}
           >
             <div className="p-3 font-bold text-foreground text-xs border-r border-border flex items-center">
               {row.label}
