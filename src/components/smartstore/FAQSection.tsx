@@ -82,8 +82,7 @@ const FAQSection = () => {
             </span>
           </h2>
           <div className="space-y-1 text-sm text-secondary-foreground/60 mb-8">
-            <p>저가 수업 듣고 시간낭비 하지 마시고  
-비싼 돈 주고 후회하지 마세요.</p>
+            <p>저가 수업 듣고 시간낭비 하지 마시고<br />비싼 돈 주고 후회하지 마세요.</p>
             <p>☕ 커피 한 모금도 안 되는 가격으로</p>
             <p className="text-primary-foreground font-bold">1위 화상영어의 품격을 증명하겠습니다.</p>
           </div>
