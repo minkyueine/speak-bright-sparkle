@@ -93,9 +93,9 @@ const AuthoritySection = () => {
           className="mt-8 grid grid-cols-2 gap-3">
           
           {[
-          { num: "50,000+", label: "누적 수강생", emoji: "👨‍🎓" },
-          { num: "85%", label: "재수강률", emoji: "🔄" },
-          { num: "100:1", label: "강사 선발 경쟁률", emoji: "🎯" },
+          { num: "15,000+", label: "누적 수강생", emoji: "👨‍🎓" },
+          { num: "95%", label: "재수강률", emoji: "🔄" },
+          { num: "33:1", label: "강사 선발 경쟁률", emoji: "🎯" },
           { num: "4.9/5.0", label: "평균 만족도", emoji: "⭐" }].
           map((stat) =>
           <div
