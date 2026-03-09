@@ -1,36 +1,36 @@
 import { motion } from "framer-motion";
 
 const plans = [
-  {
-    title: "주 2회",
-    sub: "월 8회",
-    desc: "바쁜 일상 속 가벼운 시작 🌱",
-    price: "94,000",
-    best: false,
-    features: ["1:1 원어민 맞춤 수업", "실시간 교정 피드백", "모든 교재 무상 제공"],
-  },
-  {
-    title: "주 4회",
-    sub: "월 16회",
-    desc: "단기간 실력 완성 집중 트레이닝 🚀",
-    price: "149,000",
-    best: true,
-    features: [
-      "1:1 원어민 맞춤 수업",
-      "실시간 교정 피드백",
-      "모든 교재 무상 제공",
-      "직장인/학생 선호도 1위 집중 코스 ✨",
-    ],
-  },
-  {
-    title: "주 5회",
-    sub: "월 20회",
-    desc: "학습 효율이 극대화 되는 황금주기  🔥",
-    price: "169,000",
-    best: false,
-    features: ["1:1 원어민 맞춤 수업", "실시간 교정 피드백", "모든 교재 무상 제공", "매일 영어 환경 노출로 영어 뇌 생성 🧠", "압도적인 발화량으로 실력 수직 향상 📈"],
-  },
-];
+{
+  title: "주 2회",
+  sub: "월 8회",
+  desc: "바쁜 일상 속 가벼운 시작 🌱",
+  price: "94,000",
+  best: false,
+  features: ["1:1 원어민 맞춤 수업", "실시간 교정 피드백", "모든 교재 무상 제공"]
+},
+{
+  title: "주 4회",
+  sub: "월 16회",
+  desc: "실력이 가장 빠르게 느는 최적의 횟수 🚀",
+  price: "80,000",
+  best: true,
+  features: [
+  "1:1 원어민 맞춤 수업",
+  "실시간 교정 피드백",
+  "모든 교재 무상 제공",
+  "학습 습관 형성 최적화 ✨"]
+
+},
+{
+  title: "주 5회",
+  sub: "월 20회",
+  desc: "학습 효율이 극대화 되는  🔥",
+  price: "169,000",
+  best: false,
+  features: ["1:1 원어민 맞춤 수업", "실시간 교정 피드백", "모든 교재 무상 제공"]
+}];
+
 
 const PricingSection = () => {
   return (
@@ -45,24 +45,24 @@ const PricingSection = () => {
       </div>
 
       <div className="space-y-5">
-        {plans.map((plan, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.1 }}
-            className={`rounded-2xl p-6 ${
-              plan.best
-                ? "bg-gradient-warm border-2 border-primary shadow-brand relative"
-                : "bg-card border border-border shadow-card"
-            }`}
-          >
-            {plan.best && (
-              <div className="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground font-black px-5 py-1.5 rounded-full shadow-lg text-xs w-3/4 text-center">
+        {plans.map((plan, i) =>
+        <motion.div
+          key={i}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: i * 0.1 }}
+          className={`rounded-2xl p-6 ${
+          plan.best ?
+          "bg-gradient-warm border-2 border-primary shadow-brand relative" :
+          "bg-card border border-border shadow-card"}`
+          }>
+          
+            {plan.best &&
+          <div className="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground font-black px-5 py-1.5 rounded-full shadow-lg text-xs w-3/4 text-center">
                 🏆 가장 많이 선택하는 BEST
               </div>
-            )}
+          }
             <div className={plan.best ? "mt-3" : ""}>
               <h4 className="text-xl font-black text-foreground mb-1">
                 {plan.title}{" "}
@@ -72,11 +72,11 @@ const PricingSection = () => {
                 {plan.desc}
               </p>
               <ul className="space-y-2 mb-5 text-sm text-foreground/80">
-                {plan.features.map((f, j) => (
-                  <li key={j} className="flex items-center gap-2">
+                {plan.features.map((f, j) =>
+              <li key={j} className="flex items-center gap-2">
                     <span className="text-primary">✔</span> {f}
                   </li>
-                ))}
+              )}
               </ul>
             </div>
             <div className={`text-center pt-4 border-t ${plan.best ? "border-primary/20" : "border-border"}`}>
@@ -86,26 +86,26 @@ const PricingSection = () => {
               </div>
             </div>
           </motion.div>
-        ))}
+        )}
       </div>
 
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="mt-8 text-center"
-      >
+        className="mt-8 text-center">
+        
         <div className="bg-muted rounded-2xl p-5 border border-border">
           <p className="text-sm text-muted-foreground">
             ☕ <strong className="text-foreground">커피 한 잔 값</strong>으로 원어민 1:1 수업!
           </p>
-          <p className="text-xs text-muted-foreground mt-1">
-            주 5회 기준 <strong className="text-primary text-base font-black">1회당 약 6,000원</strong>
+          <p className="text-xs text-muted-foreground mt-1">최대 주 5회 기준 1회당 약 6,000원
+            <strong className="text-primary text-base font-black">1회당 약 6,000원</strong>
           </p>
         </div>
       </motion.div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default PricingSection;
