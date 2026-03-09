@@ -78,7 +78,7 @@ const ReviewSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: i * 0.08 }}
-          className="bg-secondary p-5 rounded-2xl shadow-xl border border-secondary/80 relative">
+          className="bg-secondary p-5 rounded-2xl shadow-xl border border-brand-gold relative">
           
             <div className="absolute top-4 right-4 text-4xl opacity-10">❝</div>
             <div className="flex items-center mb-4 border-b border-secondary-foreground/10 pb-3">
