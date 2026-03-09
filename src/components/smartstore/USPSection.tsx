@@ -6,7 +6,6 @@ import childImg from "@/assets/child-lesson.jpg";
 import vipManagerImg from "@/assets/vip-manager.jpg";
 import smartMypageImg from "@/assets/smart-mypage.jpg";
 import heroImg from "@/assets/hero-video-lesson.jpg";
-import heroImg from "@/assets/hero-video-lesson.jpg";
 
 const usps = [
   {
