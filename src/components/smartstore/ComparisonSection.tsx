@@ -50,7 +50,7 @@ const ComparisonSection = () => {
             key={i}
             className={`grid grid-cols-[0.7fr_1fr_1.5fr] ${i % 2 === 0 ? "bg-card" : "bg-muted"} border-t border-border`}
           >
-            <div className="p-3 font-bold text-foreground text-xs border-r border-border flex items-center">
+            <div className="p-3 font-bold text-foreground text-xs border-r border-border flex items-center whitespace-nowrap">
               {row.label}
             </div>
             <div className="p-3 text-muted-foreground text-xs border-r border-border flex items-center">
