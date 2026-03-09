@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const ComparisonSection = () => {
   const rows = [
-    { label: "강사 선발", others: "이력서만 확인", ain: "100:1 경쟁률 + TESOL 필수" },
+    { label: "강사 선발", others: "이력서만 확인", ain: "33:1 경쟁률 + TESOL 필수" },
     { label: "수업 후 피드백", others: "없음 또는 단순 코멘트", ain: "4대 영역 진단 리포트 📊" },
-    { label: "전담 매니저", others: "없음 (셀프)", ain: "1:1 VVIP 전담 매니저 🤝" },
+    { label: "전담 매니저", others: "없음 (셀프)", ain: "1:1 VIP 전담 매니저 🤝" },
     { label: "강사 영상", others: "프로필 사진만", ain: "실제 수업 영상 100% 공개 🎬" },
     { label: "스케줄 관리", others: "매번 연락 필요", ain: "마이페이지 자동화 📱" },
     { label: "교재", others: "별도 구매", ain: "프리미엄 교재 무제한 무료 📚" },
