@@ -8,7 +8,7 @@ const ComparisonSection = () => {
     { label: "강사 영상", others: "프로필 사진만", ain: "실제 수업 영상 100% 공개 🎬" },
     { label: "스케줄 관리", others: "매번 연락 필요", ain: "마이페이지 자동화 📱" },
     { label: "교재", others: "별도 구매", ain: "프리미엄 교재 무제한 무료 📚" },
-    { label: "환불 정책", others: "위약금 있음", ain: "100% 환불 보장 ✅" },
+    
   ];
 
   return (
