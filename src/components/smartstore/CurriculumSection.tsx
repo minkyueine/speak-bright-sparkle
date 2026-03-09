@@ -152,42 +152,58 @@ const CurriculumSection = () => {
         viewport={{ once: true }}
         className="mt-6 bg-gradient-warm rounded-3xl p-6 border-2 border-primary shadow-brand">
         
-        <div className="text-center mb-4">
-          <span className="inline-block bg-primary/10 text-primary font-bold text-xs px-3 py-1 rounded-full mb-2">🤝 제휴 · 타사 월 3만원 상당 → 전면 무료
-
+        <div className="text-center mb-5">
+          <span className="inline-block bg-primary/10 text-primary font-bold text-xs px-3 py-1 rounded-full mb-2">
+            🤝 제휴 · 타사 월 3만원 상당 → 전면 무료
           </span>
           <h3 className="text-lg font-black text-foreground mb-1">
-            전 세계 800만의 선택
+            전 세계 수백만 학생이 사용하는
           </h3>
           <p className="text-primary font-black text-xl">
-            라즈키즈(Raz-kids) 연동 📚
+            Raz-Kids 영어 리딩 시스템 📚
           </p>
         </div>
-        <div className="space-y-1.5 mb-4">
+
+        {/* 핵심 체크리스트 */}
+        <div className="space-y-2 mb-5">
           <div className="flex items-start gap-2 text-sm">
-            <span className="text-primary flex-shrink-0">▸</span>
-            <span className="text-muted-foreground">미국/캐나다 공립학교 <strong className="text-foreground">정식 채택</strong> 도서관</span>
+            <span className="text-primary flex-shrink-0 font-bold">✔</span>
+            <span className="text-muted-foreground"><strong className="text-foreground">북미 학교에서 널리 활용</strong>되는 영어 리딩 학습 프로그램</span>
           </div>
           <div className="flex items-start gap-2 text-sm">
-            <span className="text-primary flex-shrink-0">▸</span>
-            <span className="text-muted-foreground"><strong className="text-foreground">약 3천 권 이상</strong>의 영어 원서 마음껏 읽고 듣기</span>
+            <span className="text-primary flex-shrink-0 font-bold">✔</span>
+            <span className="text-muted-foreground">레벨별 영어 원서로 <strong className="text-foreground">듣기 · 읽기 · 퀴즈</strong> 학습</span>
           </div>
           <div className="flex items-start gap-2 text-sm">
-            <span className="text-primary flex-shrink-0">▸</span>
-            <span className="text-muted-foreground">아인 강사님과 독후 토론 → 흡수율 <strong className="text-foreground">200% UP</strong></span>
+            <span className="text-primary flex-shrink-0 font-bold">✔</span>
+            <span className="text-muted-foreground">수업에서 아인 강사와 <strong className="text-foreground">독후 토론까지 연결</strong></span>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-3">
-          <div className="bg-card rounded-xl p-3 text-center border border-border">
-            <span className="text-xl mb-1 block">📚</span>
-            <div className="text-foreground font-black text-base">3,000+ 권</div>
-            <div className="text-muted-foreground text-[10px]">방대한 영어 원서</div>
+
+        {/* 4대 특징 카드 */}
+        <div className="grid grid-cols-2 gap-3 mb-4">
+          <div className="bg-card rounded-xl p-4 text-center border border-border">
+            <span className="text-2xl mb-1.5 block">📚</span>
+            <div className="text-foreground font-black text-base">3,000+</div>
+            <div className="text-foreground font-bold text-xs mb-1">영어 리딩 콘텐츠</div>
+            <p className="text-muted-foreground text-[10px] leading-snug">다양한 주제의 영어 책을<br />레벨에 맞게 마음껏 읽고 듣기</p>
           </div>
-          <div className="bg-card rounded-xl p-3 text-center border border-border">
-            <span className="text-xl mb-1 block">📈</span>
-            <div className="text-foreground font-black text-base">29개 레벨</div>
-            <div className="text-muted-foreground text-[10px]">유아~성인 완벽 호환</div>
+          <div className="bg-card rounded-xl p-4 text-center border border-border">
+            <span className="text-2xl mb-1.5 block">📈</span>
+            <div className="text-foreground font-black text-base">29단계</div>
+            <div className="text-foreground font-bold text-xs mb-1">세분화 레벨</div>
+            <p className="text-muted-foreground text-[10px] leading-snug">기초부터 고급까지<br />수준 맞춤 리딩 학습</p>
           </div>
+        </div>
+
+        {/* 학습 방식 강조 */}
+        <div className="bg-card rounded-xl p-4 border border-border text-center">
+          <span className="text-2xl mb-2 block">🎧</span>
+          <div className="text-foreground font-black text-sm mb-1">읽기 + 듣기 + 퀴즈 + 말하기</div>
+          <p className="text-muted-foreground text-xs leading-relaxed">
+            혼자 읽고 끝나는 영어가 아니라<br />
+            <strong className="text-foreground">수업에서 활용되는 진짜 영어 학습</strong>
+          </p>
         </div>
       </motion.div>
 
