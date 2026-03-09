@@ -18,7 +18,7 @@ const reviews = [
 },
 {
   name: "초4 학부모 박*진 님",
-  emoji: "👩",
+  img: reviewerMother,
   title: '"영어 학원 끊고 아인으로 완전 정착!" 🏠',
   highlights: [
   "문법 위주 학원에 지쳐하던 아이",
