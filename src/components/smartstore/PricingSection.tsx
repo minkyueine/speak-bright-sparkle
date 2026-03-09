@@ -12,8 +12,8 @@ const plans = [
   {
     title: "주 4회",
     sub: "월 16회",
-    desc: "실력이 가장 빠르게 느는 최적의 횟수 🚀",
-    price: "80,000",
+    desc: "단기간 실력 완성 집중 트레이닝 🚀",
+    price: "149,000",
     best: true,
     features: [
       "1:1 원어민 맞춤 수업",
