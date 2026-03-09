@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import teacherImg from "@/assets/teacher-portrait.jpg";
+import filipinoTeacherImg from "@/assets/filipino-teacher.jpg";
 import businessImg from "@/assets/business-english.jpg";
 import childImg from "@/assets/child-lesson.jpg";
 import heroImg from "@/assets/hero-video-lesson.jpg";
@@ -14,7 +15,7 @@ const usps = [
       "필리핀 최정예 강사진으로만 구성",
     ],
     accent: "특유의 압도적 친화력과 밝은 에너지로,\n왕초보도 금방 입이 트이는 기적!",
-    img: teacherImg,
+    img: filipinoTeacherImg,
     tags: ["경쟁률 100:1", "명문대/교육전공"],
     checkTitle: "✔ 서구권 대비 확실한 장점",
     benefits: [
