@@ -23,7 +23,7 @@ const steps = [
   },
   {
     num: 3,
-    title: "\uC7A5\uBE44 \uD14C\uC2A4\uD2B8 DDA5\uFE0F",
+    title: "장비 테스트 🔧",
     points: [
       "\uAE30\uACC4\uCE58\uB77C\uB3C4 \uAC71\uC815 NO!",
       "Zoom \uC124\uCE58 \u2192 \uB9C8\uC774\uD06C/\uCE74\uBA54\uB77C \uD14C\uC2A4\uD2B8\uAE4C\uC9C0",
