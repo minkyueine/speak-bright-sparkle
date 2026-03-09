@@ -56,7 +56,7 @@ const FAQSection = () => {
                 {faq.points.map((p, j) =>
               <div key={j} className="flex items-start gap-2 text-sm">
                     <span className="text-primary mt-0.5 flex-shrink-0">▸</span>
-                    <span className="text-muted-foreground leading-relaxed">{p}</span>
+                    <span className="text-muted-foreground leading-relaxed whitespace-pre-line">{p}</span>
                   </div>
               )}
               </div>
