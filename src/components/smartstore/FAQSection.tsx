@@ -100,7 +100,7 @@ const FAQSection = () => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       <div className="mt-6 text-center">
         <p className="text-muted-foreground text-[10px] leading-relaxed">
