@@ -40,7 +40,7 @@ const reviews = [
 },
 {
   name: "40대 직장인 최*석 님",
-  emoji: "👨‍💻",
+  img: reviewerOfficeman,
   title: '"필리핀 발음 걱정? 완벽한 기우!" 👌',
   highlights: [
   "처음엔 발음·억양이 걱정",
