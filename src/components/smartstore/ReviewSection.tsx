@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
+import reviewerBusinesswoman from "@/assets/reviewer-businesswoman.png";
+import reviewerMother from "@/assets/reviewer-mother.png";
+import reviewerStudent from "@/assets/reviewer-student.png";
+import reviewerOfficeman from "@/assets/reviewer-officeman.png";
 
 const reviews = [
 {
   name: "30대 직장인 김*영 님",
-  emoji: "👩‍💼",
+  img: reviewerBusinesswoman,
   title: '"영어회의 울렁증, 아인으로 극복!" 🎉',
   highlights: [
   "외국계 이직 후 회의 시간마다 꿀 먹은 벙어리",
