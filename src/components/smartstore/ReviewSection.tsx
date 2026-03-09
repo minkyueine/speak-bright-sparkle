@@ -29,7 +29,7 @@ const reviews = [
 },
 {
   name: "20대 대학생 이*현 님",
-  emoji: "👨‍🎓",
+  img: reviewerStudent,
   title: '"AI 회화 1년 → 결국 아인으로!" 🤖➡️👩‍🏫',
   highlights: [
   "AI 어플로 1년 넘게 혼자 연습",
