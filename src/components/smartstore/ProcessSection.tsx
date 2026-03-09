@@ -3,41 +3,41 @@ import { motion } from "framer-motion";
 const steps = [
   {
     num: 1,
-    title: "체험 결제 (단돈 10원) 💳",
+    title: "\uCCB4\uD5D8 \uACB0\uC81C (\uB2E8\uB3C8 10\uC6D0) \uD83D\uDCB3",
     points: [
-      "스마트폰이나 PC로 네이버 스토어 접속",
-      "최상단의 [10원 결제] 진행",
-      "부담 없이 모든 프리미엄 시스템 경험 준비!",
+      "\uC2A4\uB9C8\uD2B8\uD3F0\uC774\uB098 PC\uB85C \uB124\uC774\uBC84 \uC2A4\uD1A0\uC5B4 \uC811\uC18D",
+      "\uCD5C\uC0C1\uB2E8\uC758 [10\uC6D0 \uACB0\uC81C] \uC9C4\uD589",
+      "\uBD80\uB2F4 \uC5C6\uC774 \uBAA8\uB4E0 \uD504\uB9AC\uBBF8\uC5C4 \uC2DC\uC2A4\uD15C \uACBD\uD5D8 \uC900\uBE44!",
     ],
     highlight: false,
   },
   {
     num: 2,
-    title: "카톡 해피콜 & 스케줄 조율 📱",
+    title: "\uCE74\uD1A1 \uD574\uD53C\uCF5C & \uC2A4\uCF00\uC904 \uC870\uC728 \uD83D\uDCF1",
     points: [
-      "카톡채널 아인화상영어로 메세지 남기기 (무료체험 구매완료, 구매자성함)",
-      "1:1 전담 매니저가 카톡/전화 연락",
-      "가장 편한 날짜와 시간으로 체험 수업 확정",
+      "\uCE74\uD1A1\uCC44\uB110 \uC544\uC778\uD654\uC0C1\uC601\uC5B4\uB85C \uBA54\uC138\uC9C0 \uB0A8\uAE30\uAE30 (\uBB34\uB8CC\uCCB4\uD5D8 \uAD6C\uB9E4\uC644\uB8CC, \uAD6C\uB9E4\uC790\uC131\uD568)",
+      "1:1 \uC804\uB2F4 \uB9E4\uB2C8\uC800\uAC00 \uCE74\uD1A1/\uC804\uD654 \uC5F0\uB77D",
+      "\uAC00\uC7A5 \uD3B8\uD55C \uB0A0\uC9DC\uC640 \uC2DC\uAC04\uC73C\uB85C \uCCB4\uD5D8 \uC218\uC5C5 \uD655\uC815",
     ],
     highlight: false,
   },
   {
     num: 3,
-    title: "장비 테스트 및 OT 🖥️",
+    title: "\uC7A5\uBE44 \uD14C\uC2A4\uD2B8 \uBC0F OT \uD83D\uDDA5\uFE0F",
     points: [
-      "기계치라도 걱정 NO!",
-      "Zoom 설치 → 마이크/카메라 테스트까지",
-      "매니저가 원격으로 꼼꼼하게 점검",
+      "\uAE30\uACC4\uCE58\uB77C\uB3C4 \uAC71\uC815 NO!",
+      "Zoom \uC124\uCE58 \u2192 \uB9C8\uC774\uD06C/\uCE74\uBA54\uB77C \uD14C\uC2A4\uD2B8\uAE4C\uC9C0",
+      "\uB9E4\uB2C8\uC800\uAC00 \uC6D0\uACA9\uC73C\uB85C \uAF3C\uAF3C\uD558\uAC8C \uC810\uAC80",
     ],
     highlight: false,
   },
   {
     num: 4,
-    title: "본수업 & 입체적 레벨 진단 🎉",
+    title: "\uBCF8\uC218\uC5C5 & \uC785\uCCB4\uC801 \uB808\uBCA8 \uC9C4\uB2E8 \uD83C\uDF89",
     points: [
-      "원어민 강사님과 부담 없이 1:1 대화",
-      "수업 직후 → 강점/약점 상세 분석",
-      "어휘·문법·유창성·발음 '입체적 레벨 진단 리포트' 제공!",
+      "\uC6D0\uC5B4\uBBFC \uAC15\uC0AC\uB2D8\uACFC \uBD80\uB2F4 \uC5C6\uC774 1:1 \uB300\uD654",
+      "\uC218\uC5C5 \uC9C1\uD6C4 \u2192 \uAC15\uC810/\uC57D\uC810 \uC0C1\uC138 \uBD84\uC11D",
+      "\uC5B4\uD718\u00B7\uBB38\uBC95\u00B7\uC720\uCC3D\uC131\u00B7\uBC1C\uC74C '\uC785\uCCB4\uC801 \uB808\uBCA8 \uC9C4\uB2E8 \uB9AC\uD3EC\uD2B8' \uC81C\uACF5!",
     ],
     highlight: true,
   },
@@ -48,15 +48,15 @@ const ProcessSection = () => {
     <section className="bg-muted py-14 px-5 border-t border-border">
       <div className="text-center mb-10">
         <span className="text-primary font-bold tracking-widest text-xs bg-primary/10 px-4 py-1.5 rounded-full mb-3 inline-block shadow-sm">
-          ✅ EASY START
+          {"\u2705"} EASY START
         </span>
         <h2 className="text-xl font-black text-foreground mb-3 leading-tight">
-          "설정이 어렵지 않을까요?" 😟
+          {"\u201C\uC124\uC815\uC774 \uC5B4\uB835\uC9C0 \uC54A\uC744\uAE4C\uC694?\u201D \uD83D\uDE1F"}
           <br />
-          <span className="text-gradient-hero text-lg">결제만 하세요. 나머지는 다 해드립니다.</span> 🙌
+          <span className="text-gradient-hero text-lg">{"\uACB0\uC81C\uB9CC \uD558\uC138\uC694. \uB098\uBA38\uC9C0\uB294 \uB2E4 \uD574\uB4DC\uB9BD\uB2C8\uB2E4."}</span> {"\uD83D\uDE4C"}
         </h2>
         <p className="text-muted-foreground text-sm">
-          전담 매니저가 A부터 Z까지 밀착 케어!
+          {"\uC804\uB2F4 \uB9E4\uB2C8\uC800\uAC00 A\uBD80\uD130 Z\uAE4C\uC9C0 \uBC00\uCC29 \uCF00\uC5B4!"}
         </p>
       </div>
 
@@ -68,14 +68,14 @@ const ProcessSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: i * 0.08 }}
-            className={`${\
+            className={`${
               step.highlight
                 ? "bg-gradient-warm border-2 border-primary shadow-brand"
                 : "bg-card border border-border shadow-card"
             } rounded-2xl p-5 flex items-start gap-4`}
           >
             <div
-              className={`w-10 h-10 ${\
+              className={`w-10 h-10 ${
                 step.highlight ? "bg-primary" : "bg-foreground"
               } text-primary-foreground rounded-full flex items-center justify-center font-black text-base shadow-md flex-shrink-0`}
             >
@@ -88,7 +88,7 @@ const ProcessSection = () => {
               <div className="space-y-1">
                 {step.points.map((p, j) => (
                   <div key={j} className="flex items-start gap-2 text-sm">
-                    <span className="text-primary mt-0.5 flex-shrink-0">▸</span>
+                    <span className="text-primary mt-0.5 flex-shrink-0">{"\u25B8"}</span>
                     <span className="text-muted-foreground leading-relaxed">{p}</span>
                   </div>
                 ))}
