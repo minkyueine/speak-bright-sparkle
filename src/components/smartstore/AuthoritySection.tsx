@@ -12,8 +12,8 @@ const AuthoritySection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-10"
-        >
+          className="text-center mb-10">
+          
           <span className="inline-block py-1.5 px-4 rounded-full bg-brand-dark text-brand-gold font-bold text-xs mb-3 tracking-widest shadow-md">
             🏅 PROVEN FACT
           </span>
@@ -33,8 +33,8 @@ const AuthoritySection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="relative bg-gradient-to-b from-card to-accent/30 border-[3px] border-brand-gold rounded-3xl p-6 flex flex-col items-center text-center shadow-gold"
-          >
+            className="relative bg-gradient-to-b from-card to-accent/30 border-[3px] border-brand-gold rounded-3xl p-6 flex flex-col items-center text-center shadow-gold">
+            
             <div className="absolute -top-5 bg-brand-gold text-foreground font-black px-4 py-1.5 rounded-full shadow-lg text-xs border-2 border-card">
               대한민국 화상영어 부문
             </div>
@@ -60,8 +60,8 @@ const AuthoritySection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="relative bg-gradient-to-b from-card to-destructive/5 border-[3px] border-brand-red rounded-3xl p-6 flex flex-col items-center text-center shadow-brand"
-          >
+            className="relative bg-gradient-to-b from-card to-destructive/5 border-[3px] border-brand-red rounded-3xl p-6 flex flex-col items-center text-center shadow-brand">
+            
             <div className="absolute -top-5 bg-brand-red text-primary-foreground font-black px-4 py-1.5 rounded-full shadow-lg text-xs border-2 border-card">
               깐깐한 셀럽의 선택
             </div>
@@ -71,8 +71,8 @@ const AuthoritySection = () => {
             <h4 className="text-foreground font-black text-lg mb-1">
               누적 조회수 200만! 🎬
             </h4>
-            <p className="text-brand-red font-black text-3xl mb-3">
-              유명 유튜버 극찬
+            <p className="text-brand-red font-black text-3xl mb-3">유튜버 극찬
+
             </p>
             <p className="text-muted-foreground text-xs leading-relaxed bg-card p-3 rounded-xl shadow-card border border-border">
               협찬에 깐깐하기로 소문난 유튜버들도
@@ -87,27 +87,27 @@ const AuthoritySection = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-8 grid grid-cols-2 gap-3"
-        >
+          className="mt-8 grid grid-cols-2 gap-3">
+          
           {[
-            { num: "50,000+", label: "누적 수강생", emoji: "👨‍🎓" },
-            { num: "85%", label: "재수강률", emoji: "🔄" },
-            { num: "100:1", label: "강사 선발 경쟁률", emoji: "🎯" },
-            { num: "4.9/5.0", label: "평균 만족도", emoji: "⭐" },
-          ].map((stat) => (
-            <div
-              key={stat.label}
-              className="bg-card rounded-2xl p-4 text-center shadow-card border border-border"
-            >
+          { num: "50,000+", label: "누적 수강생", emoji: "👨‍🎓" },
+          { num: "85%", label: "재수강률", emoji: "🔄" },
+          { num: "100:1", label: "강사 선발 경쟁률", emoji: "🎯" },
+          { num: "4.9/5.0", label: "평균 만족도", emoji: "⭐" }].
+          map((stat) =>
+          <div
+            key={stat.label}
+            className="bg-card rounded-2xl p-4 text-center shadow-card border border-border">
+            
               <span className="text-2xl mb-1 block">{stat.emoji}</span>
               <div className="text-xl font-black text-foreground">{stat.num}</div>
               <div className="text-xs text-muted-foreground mt-0.5">{stat.label}</div>
             </div>
-          ))}
+          )}
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default AuthoritySection;
