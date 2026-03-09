@@ -6,6 +6,7 @@ import childImg from "@/assets/child-lesson.jpg";
 import vipManagerImg from "@/assets/vip-manager.jpg";
 import smartMypageImg from "@/assets/smart-mypage.jpg";
 import heroImg from "@/assets/hero-video-lesson.jpg";
+import teacherVideoImg from "@/assets/teacher-video-preview.jpg";
 
 const usps = [
   {
@@ -86,7 +87,7 @@ const usps = [
       "아인은 업계 유일! 모든 강사의 실제 수업 영상까지 투명 공개",
     ],
     accent: null,
-    img: teacherImg,
+    img: teacherVideoImg,
     tags: ["업계 유일 🔴", "100% 투명 공개"],
     checkTitle: "✔ 실패 확률 0%! 내 맘에 쏙 드는 강사 매칭",
     benefits: [
