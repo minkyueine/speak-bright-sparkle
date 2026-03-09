@@ -48,7 +48,7 @@ const AuthoritySection = () => {
               3년 연속 1위
             </p>
             <p className="text-muted-foreground text-xs leading-relaxed bg-card p-3 rounded-xl shadow-card border border-border">
-              2021, 2022, 2023년 기준!
+              2025, 2024, 2023년 기준!
               <br />
               수많은 타사를 제치고{" "}
               <strong className="text-foreground">압도적인 방문자 수와 만족도 1위</strong>를 굳건히 지키고 있습니다.
