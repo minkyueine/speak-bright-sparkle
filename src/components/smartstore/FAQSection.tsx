@@ -74,7 +74,7 @@ const FAQSection = () => {
       >
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)", backgroundSize: "20px 20px" }} />
         <div className="relative z-10">
-          <span className="inline-block bg-brand-red text-primary-foreground font-black px-4 py-1.5 rounded-full text-xs mb-6 animate-pulse shadow-lg">
+          <span className="inline-block bg-brand-red text-primary-foreground font-black px-4 py-1.5 rounded-full text-xs mb-6 shadow-lg">
             🔴 이달의 체험수업 정원 마감 임박
           </span>
           <h2 className="text-2xl font-black text-primary-foreground mb-4 leading-tight">
