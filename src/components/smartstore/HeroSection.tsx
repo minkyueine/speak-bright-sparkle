@@ -57,8 +57,7 @@ const HeroSection = () => {
             체험수업 단돈 10원! 🔥
           </p>
           <div className="text-primary-foreground text-xs opacity-80 border-t border-primary-foreground/20 pt-4 mt-1 font-light leading-relaxed">
-            나와 맞지 않는다면 100% 취소 가능합니다.
-            <br />☕ 커피 한 모금 값으로 1위의 차이를 느껴보세요.
+            빠른 선택으로 1위의 차이를 느껴보세요.
           </div>
         </motion.div>
       </div>
