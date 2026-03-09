@@ -71,7 +71,7 @@ const FAQSection = () => {
         
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)", backgroundSize: "20px 20px" }} />
         <div className="relative z-10">
-          <span className="inline-block bg-brand-red text-primary-foreground font-black px-4 py-1.5 rounded-full text-xs mb-6 animate-pulse shadow-lg">
+          <span className="inline-block bg-brand-red text-primary-foreground font-black px-4 py-1.5 rounded-full text-xs mb-6 shadow-lg">
             🔴 이달의 체험수업 정원 마감 임박
           </span>
           <h2 className="text-2xl font-black text-primary-foreground mb-4 leading-tight">
@@ -87,7 +87,7 @@ const FAQSection = () => {
             <p>☕ 커피 한 모금도 안 되는 가격으로</p>
             <p className="text-primary-foreground font-bold">1위 화상영어의 품격을 증명하겠습니다.</p>
           </div>
-          <div className="bg-primary-foreground/10 backdrop-blur-md border border-primary-foreground/20 p-5 rounded-2xl animate-float shadow-2xl">
+          <div className="bg-primary-foreground/10 backdrop-blur-md border border-primary-foreground/20 p-5 rounded-2xl shadow-2xl">
             <p className="text-brand-gold font-bold mb-3 text-sm">
               👆 지금 바로 상단 구매 옵션을 확인하세요!
             </p>
