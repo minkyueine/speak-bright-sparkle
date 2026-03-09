@@ -3,6 +3,7 @@ import teacherImg from "@/assets/teacher-portrait.jpg";
 import filipinoTeacherImg from "@/assets/filipino-teacher.jpg";
 import businessImg from "@/assets/business-english.jpg";
 import childImg from "@/assets/child-lesson.jpg";
+import vipManagerImg from "@/assets/vip-manager.jpg";
 import heroImg from "@/assets/hero-video-lesson.jpg";
 
 const usps = [
@@ -49,7 +50,7 @@ const usps = [
       "레벨 진단 → 교재 추천 → 슬럼프 상담까지",
     ],
     accent: "든든한 페이스메이커가 되어 드립니다!",
-    img: childImg,
+    img: vipManagerImg,
     tags: ["슬럼프 극복", "1:1 VVIP 케어"],
     checkTitle: "✔ 사람의 온기가 담긴 휴먼 케어",
     benefits: [
