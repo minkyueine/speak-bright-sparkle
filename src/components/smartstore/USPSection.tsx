@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import teacherImg from "@/assets/teacher-portrait.jpg";
+import filipinoTeacherImg from "@/assets/filipino-teacher.jpg";
 import businessImg from "@/assets/business-english.jpg";
 import childImg from "@/assets/child-lesson.jpg";
 import heroImg from "@/assets/hero-video-lesson.jpg";
