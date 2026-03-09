@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const faqs = [
   {
@@ -16,14 +15,6 @@ const faqs = [
       "가능합니다!",
       "홈페이지 '나의 강의실' → 간편하게 휴강 및 대체 수업 신청",
       "수강생 스케줄을 최우선으로 존중 📅",
-    ],
-  },
-  {
-    q: "정말 불만족하면 100% 환불/취소가 되나요?",
-    points: [
-      "네! 체험 수업 후 맞지 않으면",
-      "위약금·수수료 없이 100% 깔끔 취소",
-      "아인의 강의력에 대한 굳은 자신감 💪",
     ],
   },
   {
