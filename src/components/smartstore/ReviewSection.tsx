@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
+import reviewerBusinesswoman from "@/assets/reviewer-businesswoman.png";
+import reviewerMother from "@/assets/reviewer-mother.png";
+import reviewerStudent from "@/assets/reviewer-student.png";
+import reviewerOfficeman from "@/assets/reviewer-officeman.png";
 
 const reviews = [
 {
   name: "30대 직장인 김*영 님",
-  emoji: "👩‍💼",
+  img: reviewerBusinesswoman,
   title: '"영어회의 울렁증, 아인으로 극복!" 🎉',
   highlights: [
   "외국계 이직 후 회의 시간마다 꿀 먹은 벙어리",
@@ -14,7 +18,7 @@ const reviews = [
 },
 {
   name: "초4 학부모 박*진 님",
-  emoji: "👩",
+  img: reviewerMother,
   title: '"영어 학원 끊고 아인으로 완전 정착!" 🏠',
   highlights: [
   "문법 위주 학원에 지쳐하던 아이",
@@ -25,7 +29,7 @@ const reviews = [
 },
 {
   name: "20대 대학생 이*현 님",
-  emoji: "👨‍🎓",
+  img: reviewerStudent,
   title: '"AI 회화 1년 → 결국 아인으로!" 🤖➡️👩‍🏫',
   highlights: [
   "AI 어플로 1년 넘게 혼자 연습",
@@ -36,7 +40,7 @@ const reviews = [
 },
 {
   name: "40대 직장인 최*석 님",
-  emoji: "👨‍💻",
+  img: reviewerOfficeman,
   title: '"필리핀 발음 걱정? 완벽한 기우!" 👌',
   highlights: [
   "처음엔 발음·억양이 걱정",
@@ -78,8 +82,8 @@ const ReviewSection = () => {
           
             <div className="absolute top-4 right-4 text-4xl opacity-10">❝</div>
             <div className="flex items-center mb-4 border-b border-secondary-foreground/10 pb-3">
-              <div className="w-11 h-11 rounded-full flex items-center justify-center text-2xl bg-secondary-foreground/10 mr-3 border-2 border-primary">
-                {review.emoji}
+              <div className="w-11 h-11 rounded-full flex items-center justify-center overflow-hidden bg-secondary-foreground/10 mr-3 border-2 border-primary">
+                <img src={review.img} alt={review.name} className="w-full h-full object-cover" />
               </div>
               <div>
                 <div className="font-bold text-primary-foreground text-sm">{review.name}</div>
