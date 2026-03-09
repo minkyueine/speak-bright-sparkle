@@ -34,7 +34,7 @@ const ComparisonSection = () => {
         className="overflow-hidden rounded-2xl border border-border shadow-card"
       >
         {/* Header */}
-        <div className="grid grid-cols-[1fr_1fr_1.2fr] bg-foreground text-primary-foreground text-xs">
+        <div className="grid grid-cols-[0.7fr_1fr_1.5fr] bg-foreground text-primary-foreground text-xs">
           <div className="p-3 font-bold text-center border-r border-primary-foreground/10">
             비교 항목
           </div>
