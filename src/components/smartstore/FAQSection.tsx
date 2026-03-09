@@ -66,10 +66,7 @@ const FAQSection = () => {
       </div>
 
       {/* Final CTA */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
+      <div
         className="bg-gradient-dark rounded-3xl p-8 text-center shadow-dark relative overflow-hidden">
         
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)", backgroundSize: "20px 20px" }} />
@@ -103,7 +100,7 @@ const FAQSection = () => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       <div className="mt-6 text-center">
         <p className="text-muted-foreground text-[10px] leading-relaxed">
