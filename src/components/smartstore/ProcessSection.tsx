@@ -52,7 +52,7 @@ const ProcessSection = () => {
         <h2 className="text-xl font-black text-foreground mb-3 leading-tight">
           "설정이 어렵지 않을까요?" 😟
           <br />
-          <span className="text-gradient-hero text-lg">결제만 하세요. 나머지는 다 해드립니다. 🙌</span>
+          <span className="text-gradient-hero text-lg">결제만 하세요. 나머지는 다 해드립니다.</span> 🙌
         </h2>
         <p className="text-muted-foreground text-sm">
           전담 매니저가 A부터 Z까지 밀착 케어!
