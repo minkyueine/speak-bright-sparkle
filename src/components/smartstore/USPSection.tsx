@@ -51,7 +51,7 @@ const usps = [
     ],
     accent: "든든한 페이스메이커가 되어 드립니다!",
     img: vipManagerImg,
-    tags: ["슬럼프 극복", "1:1 VVIP 케어"],
+    tags: ["슬럼프 극복", "1:1 VIP 케어"],
     checkTitle: "✔ 사람의 온기가 담긴 휴먼 케어",
     benefits: [
       { icon: "💛", title: "빠르고 친절한 소통", desc: "궁금한 점·불편한 점 → 카카오톡으로 즉각 해결" },
