@@ -45,28 +45,24 @@ const FAQSection = () => {
           궁금한 점은 여기서 먼저 확인!
         </p>
 
-        <Accordion type="single" collapsible className="space-y-3">
+        <div className="space-y-3">
           {faqs.map((faq, i) => (
-            <AccordionItem key={i} value={`faq-${i}`} className="bg-muted rounded-2xl border-none px-4">
-              <AccordionTrigger className="text-sm font-bold text-foreground hover:no-underline gap-2">
-                <span className="flex items-start gap-2 text-left">
-                  <span className="text-primary font-black flex-shrink-0">Q</span>
-                  <span>{faq.q}</span>
-                </span>
-              </AccordionTrigger>
-              <AccordionContent>
-                <div className="space-y-1.5 ml-6">
-                  {faq.points.map((p, j) => (
-                    <div key={j} className="flex items-start gap-2 text-sm">
-                      <span className="text-primary mt-0.5 flex-shrink-0">▸</span>
-                      <span className="text-muted-foreground leading-relaxed">{p}</span>
-                    </div>
-                  ))}
-                </div>
-              </AccordionContent>
-            </AccordionItem>
+            <div key={i} className="bg-muted rounded-2xl border-none px-4 py-4">
+              <div className="flex items-start gap-2 text-sm font-bold text-foreground mb-2">
+                <span className="text-primary font-black flex-shrink-0">Q</span>
+                <span>{faq.q}</span>
+              </div>
+              <div className="space-y-1.5 ml-6">
+                {faq.points.map((p, j) => (
+                  <div key={j} className="flex items-start gap-2 text-sm">
+                    <span className="text-primary mt-0.5 flex-shrink-0">▸</span>
+                    <span className="text-muted-foreground leading-relaxed">{p}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           ))}
-        </Accordion>
+        </div>
       </div>
 
       {/* Final CTA */}
