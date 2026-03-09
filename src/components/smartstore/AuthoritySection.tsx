@@ -65,8 +65,11 @@ const AuthoritySection = () => {
             <div className="absolute -top-5 bg-brand-red text-primary-foreground font-black px-4 py-1.5 rounded-full shadow-lg text-xs border-2 border-card">
               깐깐한 셀럽의 선택
             </div>
-            <div className="w-20 h-20 bg-gradient-to-br from-brand-red to-destructive rounded-full flex items-center justify-center text-4xl mb-4 border-4 border-card shadow-lg mt-3">
-              🔥
+            <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-4 border-4 border-card shadow-lg mt-3">
+              <svg viewBox="0 0 48 48" className="w-12 h-12" fill="none">
+                <path d="M43.2 13.2a5.4 5.4 0 0 0-3.8-3.8C36.2 8.4 24 8.4 24 8.4s-12.2 0-15.4 1a5.4 5.4 0 0 0-3.8 3.8C3.8 16.4 3.8 24 3.8 24s0 7.6 1 10.8a5.4 5.4 0 0 0 3.8 3.8c3.2 1 15.4 1 15.4 1s12.2 0 15.4-1a5.4 5.4 0 0 0 3.8-3.8c1-3.2 1-10.8 1-10.8s0-7.6-1-10.8Z" fill="#FF0000"/>
+                <path d="M19.8 30.6 31.2 24l-11.4-6.6v13.2Z" fill="#fff"/>
+              </svg>
             </div>
             <h4 className="text-foreground font-black text-lg mb-1">
               누적 조회수 200만! 🎬
