@@ -82,7 +82,7 @@ const ReviewSection = () => {
           
             <div className="absolute top-4 right-4 text-4xl opacity-10">❝</div>
             <div className="flex items-center mb-4 border-b border-secondary-foreground/10 pb-3">
-              <div className="w-11 h-11 rounded-full flex items-center justify-center overflow-hidden bg-secondary-foreground/10 mr-3 border-2 border-primary">
+              <div className="w-11 h-11 rounded-full flex items-center justify-center overflow-hidden bg-white mr-3 border-2 border-primary">
                 <img src={review.img} alt={review.name} className="w-full h-full object-cover" />
               </div>
               <div>
