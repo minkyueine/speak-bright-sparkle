@@ -70,8 +70,9 @@ const PainPointSection = () => {
           시간과 돈을 수없이 투자했는데,
           <br />
           <span className="text-gradient-gold inline-block border-b-4 border-primary pb-1 text-lg mt-1">
-            영어는 왜 항상 제자리일까요? 🤔
-          </span>
+            영어는 왜 항상 제자리일까요?
+          </span>{" "}
+          <span className="text-lg">🤔</span>
         </motion.h2>
         <p className="text-secondary-foreground/60 text-sm font-light">
           나, 그리고 우리 아이의 이야기인지<br />확인해 보세요.
