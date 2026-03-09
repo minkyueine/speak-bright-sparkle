@@ -69,7 +69,7 @@ const usps = [
     ],
     accent: null,
     img: smartMypageImg,
-    tags: ["완전 자동화", "투명한 관리"],
+    tags: ["자동화 시스템", "투명한 관리"],
     checkTitle: "✔ 클릭 한 번으로 끝나는 압도적 편리함",
     benefits: [
       { icon: "💡", title: "자율 스케줄링", desc: "강사/시간 변경, 휴강, 장기 연기 → 셀프 신청 가능" },
