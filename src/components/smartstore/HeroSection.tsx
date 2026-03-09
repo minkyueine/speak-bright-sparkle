@@ -14,8 +14,8 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-primary font-bold mb-3 tracking-[0.15em] text-xs"
-        >
+          className="text-primary font-bold mb-3 tracking-[0.15em] text-xs">
+          
           ✨ 수많은 화상영어, 더 이상 헤매지 마세요 ✨
         </motion.p>
 
@@ -23,8 +23,8 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-xl font-light mb-2 text-secondary-foreground/80"
-        >
+          className="text-xl font-light mb-2 text-secondary-foreground/80">
+          
           왜 결국 <strong className="font-black text-primary-foreground text-glow">'아인잉글리쉬'</strong>에
           <br />정착할 수밖에 없을까요?
         </motion.h2>
@@ -33,8 +33,8 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="my-8"
-        >
+          className="my-8">
+          
           <h1 className="text-4xl font-black leading-tight mb-4">
             비교할수록
             <br />
@@ -48,8 +48,8 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="bg-primary-foreground/10 backdrop-blur-md border border-primary-foreground/20 p-6 rounded-3xl mx-auto shadow-brand"
-        >
+          className="bg-primary-foreground/10 backdrop-blur-md border border-primary-foreground/20 p-6 rounded-3xl mx-auto shadow-brand">
+          
           <p className="text-secondary-foreground/80 font-medium mb-2 text-base">
             품질에 대한 자신감으로 준비했습니다 💪
           </p>
@@ -57,12 +57,12 @@ const HeroSection = () => {
             체험수업 단돈 10원! 🔥
           </p>
           <div className="text-primary-foreground text-xs opacity-80 border-t border-primary-foreground/20 pt-4 mt-1 font-light leading-relaxed">
-            빠른 선택으로 1위의 차이를 느껴보세요.
+            후회없는 빠른 선택으로 1위의 차이를 느껴보세요.
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
