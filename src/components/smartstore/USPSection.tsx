@@ -3,6 +3,7 @@ import teacherImg from "@/assets/teacher-portrait.jpg";
 import filipinoTeacherImg from "@/assets/filipino-teacher.jpg";
 import businessImg from "@/assets/business-english.jpg";
 import childImg from "@/assets/child-lesson.jpg";
+import vipManagerImg from "@/assets/vip-manager.jpg";
 import heroImg from "@/assets/hero-video-lesson.jpg";
 
 const usps = [
