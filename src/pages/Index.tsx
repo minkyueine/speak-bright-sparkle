@@ -8,6 +8,7 @@ import ReviewSection from "@/components/smartstore/ReviewSection";
 import ProcessSection from "@/components/smartstore/ProcessSection";
 import PricingSection from "@/components/smartstore/PricingSection";
 import FAQSection from "@/components/smartstore/FAQSection";
+import EventSection from "@/components/smartstore/EventSection";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       <ProcessSection />
       <PricingSection />
       <FAQSection />
+      <EventSection />
     </div>
   );
 };
