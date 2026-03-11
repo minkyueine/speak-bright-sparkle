@@ -102,9 +102,9 @@ const FAQSection = () => {
       </div>
 
       <div className="mt-6 text-center">
-        <p className="text-muted-foreground text-[10px] leading-relaxed">
-          * 환불 규정 및 연기/취소 매뉴얼은<br />홈페이지 및 결제 완료 후 알림톡으로 투명 제공
-        </p>
+        
+
+        
       </div>
     </section>);
 };
